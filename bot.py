@@ -20,7 +20,7 @@ print("Imports OK", flush=True)
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 SUPABASE_URL = os.environ.get("SUPABASE_URL")
 SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
-ADMIN_IDS = [7515220054]  # Replace with your Telegram user ID
+ADMIN_IDS = [8261552694]  # Replace with your Telegram user ID
 
 # Initialize Supabase
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
@@ -195,10 +195,10 @@ async def menu_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
         await update.message.reply_text(disclaimer)
     elif text == "🆘 Support":
-        await update.message.reply_text("🆘 Support Contact:\n━━━━━━━━━━━━━━\n@ProxySupportChat_bot")
+        await update.message.reply_text("🆘 Support Contact:\n━━━━━━━━━━━━━━\n@Xtreme_support_bot")
     elif text == "📢 Our Channels":
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("@PROXY_LOOTERS", url="https://t.me/PROXY_LOOTERS")]
+            [InlineKeyboardButton("@XtremeZone", url="https://t.me/xtremexone94")]
         ])
         await update.message.reply_text("📢 Join our official channels for updates and deals:", reply_markup=keyboard)
     else:
